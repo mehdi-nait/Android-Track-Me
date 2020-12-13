@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            style="@style/MyAppStyle"
+            android:text="Authentify your products with one click"
+            android:textSize="25sp">
+
+        </TextView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:foreground="@drawable/test"></ImageView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
