@@ -6,12 +6,18 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
         <TextView
             style="@style/MyAppStyle"
             android:text="Articles Fragment">
 
         </TextView>
+
+        <TextView
+            style="@style/ArticleStyle"
+            android:id="@+id/articles_text"
+            android:text="Empty Please scan an article" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

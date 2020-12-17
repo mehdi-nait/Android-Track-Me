@@ -1,5 +1,6 @@
 package com.ensim.scanmev1;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -12,10 +13,24 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.ensim.scanmev1.ui.main.SectionsPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
+    String query = " Empty ";
+
+
+    public String getQuery() {
+        return query;
+    }
+
+
+    public void setQuery(String query) {
+        this.query = query;
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +41,16 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
+
+
+
+
+
+
+
+
+
+
 
     }
 }

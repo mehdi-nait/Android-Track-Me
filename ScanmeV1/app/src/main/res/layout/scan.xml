@@ -1,24 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_bg">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="91dp">
+
         <TextView
             style="@style/MyAppStyle"
             android:text="Please point your phone towards the product "
             android:textSize="25sp">
 
         </TextView>
+
         <ImageView
-            android:layout_width="400dp"
-            android:layout_height="400dp"
-            android:visibility="visible"
-            android:contentDescription="scan icon"
-            android:src="@mipmap/ffff"></ImageView>
-    </LinearLayout>
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="123dp"
+            android:layout_marginEnd="71dp"
+            android:layout_marginRight="71dp"
+            app:srcCompat="@drawable/scan" />
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
